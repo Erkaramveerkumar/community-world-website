@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*
+::::::::::::::::::::::::::
+variable
+::::::::::::::::::::::::::
+*/
+
+:root {
+    --header-bg-color: #07091E;
+    --main-bg-color: #020E27;
+    --main-contact-bg-color: #25187bf6;
+    --tittle-txt-color: #07091E;
+    --btn-bg-color: #25187B;
+}
+
+/*
+::::::::::::::::::::::::::
+common class  AREA CSS
+::::::::::::::::::::::::::
+*/
+
+.w-115{
+    width: 115px;
+}
+
+.w-165{
+    width: 165px;
+}
+
+
+
+
+p {
+    font-weight: 600;
+}
+
+h1,
+h2,
+h6,
+h5 {
+    font-family: "Zen Dots", serif;
+}
+
+.txt-color {
+    color: #000;
+}
+
+.txt-blue {
+    color: #25187B;
+}
+
+.btn-bg-color {
+    background-color: var(--btn-bg-color);
+    font-size: 18px;
+    color: #fff;
+}
+
+.btn-hover:hover {
+    background-color: #fff !important;
+    border: none;
+    transform: scale(0.9);
+    color: #07091E !important;
+    transition: all .3s;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 52px;
+    color: var(--tittle-txt-color);
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 29px;
+    }
+}
+
+.overlay-bg-fix {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+ .navbar-toggler {
+    background-color: white !important;
+    opacity: 0.9;
+
+}
+
+.progress-bar {
+    background-color: var(--main-contact-bg-color) !important;
+}
+
+.progress,
+.progress-stacked {
+    --bs-progress-height: 0.3rem;
+}
+
+.animated-bar1 {
+    animation: load1 3s normal forwards;
+}
+
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 68%;
+    }
+}
+
+
+.animated-bar2 {
+    animation: load2 3s normal forwards;
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.animated-bar3 {
+    animation: load3 3s normal forwards;
+}
+
+@keyframes load3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.animated-bar4 {
+    animation: load4 3s normal forwards;
+}
+
+@keyframes load4 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+/*
+::::::::::::::::::::::::::
+header section css
+::::::::::::::::::::::::::
+*/
+.header-section .header-bg {
+    background-color: var(--header-bg-color);
+}
+
+.header-section ul li a {
+    color: #C6BFF1;
+    font-size: 18px;
+}
+
+.header-section ul li a:hover {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/*
+::::::::::::::::::::::::::
+hero section css
+::::::::::::::::::::::::::
+*/
+
+.hero-section .hero-bg-color {
+    background-color: var(--main-bg-color);
+}
+
+.hero-section .hero-bg {
+    background-image: url(../assest/image/bg-overlay-img/hero-bg-overlay.png);
+}
+
+/*
+::::::::::::::::::::::::::
+About Community section css 
+::::::::::::::::::::::::::
+*/
+
+
+.about-community-bg {
+    background-image: url(../assest/image/bg-overlay-img/community-overlay-bg.png);
+}
+
+/*
+::::::::::::::::::::::::::
+ our service
+::::::::::::::::::::::::::
+*/
+
+.our-sevices {
+    background-color: #F3F3F3;
+
+}
+
+.our-sevices .about-community-bg {
+    background-image: url(../assest/image/bg-overlay-img/ourservices-Overlay-bg.png);
+}
+
+.service-card-bg {
+    color: #F3F3F3;
+}
+
+.check-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #25187B;
+
+}
+
+/*
+::::::::::::::::::::::::::
+Trustful-section css
+::::::::::::::::::::::::::
+*/
+
+
+.Trustful-section {
+    background-color: var(--main-bg-color);
+}
+
+.Trustful-section .about-community-bg {
+    background-image: url(../assest/image/bg-overlay-img/ourservices-Overlay-bg.png);
+}
+
+/*
+::::::::::::::::::::::::::
+our-proudct 
+::::::::::::::::::::::::::
+*/
+
+
+.trade-product {
+    background-color: #F3F3F3;
+}
+
+.trade-product .bg-secondary {
+    background-color: #ccc !important;
+}
+
+.product-card-overlay {
+    background-image: url(../assest/image/bg-overlay-img/ourservices-Overlay-bg.png);
+
+}
+
+
+/*
+::::::::::::::::::::::::::
+form section
+::::::::::::::::::::::::::
+*/
+
+.form-section {
+    background-color: var(--main-contact-bg-color);
+}
+
+.form-section input {
+    padding: 15px !important;
+    background-color: #020e27 !important;
+}
+
+.form-section textarea {
+    background-color: #020e27 !important;
+}
+
+.form-section input::placeholder {
+    color: rgb(185, 183, 183) !important;
+    font-family: "Zen Dots", serif;
+}
+
+.form-section textarea::placeholder {
+    color: rgb(185, 183, 183) !important;
+    font-family: "Zen Dots", serif;
+}
+
+.form-section input:focus {
+    box-shadow: none;
+}
+
+.form-section textarea:focus {
+    box-shadow: none;
+
+}
+
+/*
+::::::::::::::::::::::::::
+footer 
+::::::::::::::::::::::::::
+*/
+.footer {
+    background-color: var(--main-bg-color);
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.s-media-bg {
+    background-color: var(--main-contact-bg-color);
+}
+
+.footer hr {
+    border: 1px solid #ccc;
+}
+
+/*
+::::::::::::::::::::::::::
+parallax 
+::::::::::::::::::::::::::
+*/
+
+.parallax {
+    background-image: url('../assest/image/bg-overlay-img/hero-bg-overlay.png');
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
